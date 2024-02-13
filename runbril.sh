@@ -30,7 +30,7 @@ do
     brilcalc lumi --byls --normtag ../${normtag} --minBiasXsec ${mbiasxsec} -u /fb --hltpath "$hltpath" -i ../"$certjson" -o "$hpath"_out.csv
     wait
     echo "Start pileupReCalc"
-    pileupReCalc_HLTpaths.py -i ${hpath}_out.csv --inputLumiJSON ../${pileupfile} -o ${hpath}_pu.txt --runperiod Run2
+    pileupReCalc_HLTpaths.py -i ${hpath}_out.csv --inputLumiJSON ../${pileupfile} -o ${hpath}_pu.txt --runperiod Run3
     wait
     echo "Start pileUpCalc"
     pileupCalc.py -i ../"$certjson" --inputLumiJSON ${hpath}_pu.txt --calcMode true --minBiasXsec ${mbiasxsec} --maxPileupBin 120 --numPileupBins 120 pu_${hpath}.root
