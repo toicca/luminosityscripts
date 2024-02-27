@@ -5,7 +5,7 @@
 
 trigs=../$1
 certjson="jsonfiles/Cert_Collisions"$2$3.json
-#certjson="jsonfiles/Cert_Collisions2023_366442_370790_Golden.json"
+# certjson="jsonfiles/Cert_CollisionsRun3.json"
 pileupfile="jsonfiles/pileupJSON"$2".txt"
 normtag="jsonfiles/normtag_BRIL.json"
 
@@ -23,7 +23,7 @@ cd ${outdir}
 while IFS= read -r hpath
 
 do
-#    echo $hpath
+    echo $hpath
     hltpath=$hpath"_v*"
     echo $hltpath
 
