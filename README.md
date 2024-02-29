@@ -18,7 +18,7 @@ These are written for early 2022-23 JES studies, for later developement mostly s
 
 - PileupJSON:
 
-    `cmsrel CMSSW_12_4_6` This version of CMSSW is required for makePileupJSON.py
+    `cmsrel CMSSW_12_4_6` This version of CMSSW is required for makePileupJSON.py, 13_2_10 tested to work as well
 
     `cd CMSSW_12_4_6/src`
 
